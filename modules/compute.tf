@@ -14,7 +14,7 @@ resource "azurerm_container_group" "testing container" {
     memory = "1.5"
 
     ports {
-      port     = 404
+      port     = 443
       protocol = "TCP"
     }
   }
@@ -23,11 +23,11 @@ resource "azurerm_container_group" "testing container" {
     name   = "sidecar"
     image  = "mcr.microsoft.com/azuredocs/aci-tutorial-sidecar"
     cpu    = "0.5"
-    memory = "1.5"
+    memory = "2.4"
   }
 
   tags = {
-    environment = "testing"
+    environment = "production"
   }
 }
 
