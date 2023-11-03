@@ -1,4 +1,4 @@
-# Container Instances (for hosting your stateless containerized application)
+# #Container Instances (for hosting your stateless containerized application)
 resource "azurerm_container_group" "testing container" {
   name                = "example-continst"
   location            = azurerm_resource_group.example.location
@@ -14,7 +14,7 @@ resource "azurerm_container_group" "testing container" {
     memory = "1.5"
 
     ports {
-      port     = 443
+      port     = 404
       protocol = "TCP"
     }
   }
